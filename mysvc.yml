@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mymginx-svs
-  labeles:
-       app: mynginx
+  name: mymginx-svc
+  labels:
+     app: mynginx
 spec:
   type: NodePort
   ports:
