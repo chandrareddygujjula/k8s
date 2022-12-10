@@ -4,7 +4,7 @@ metadata:
   name: hello-rc
 spec:
   replicas: 3
-  selectors:
+  selector:
      app: mynginx
   template:
     metadata:
