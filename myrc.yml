@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: mylogin-rc
+  name: mymginx-rc
 spec:
   replicas: 3
   selectors:
-     app: mylogin
+     app: mynginx
   template:
     metadata:
        labels:
-          app: mylogin
+          app: mynginx
     spec:
       containers:
-      - name: mylogin-container
+      - name: mynginx-container
         image: nginx
         ports:
          - containerPort: 8080         
