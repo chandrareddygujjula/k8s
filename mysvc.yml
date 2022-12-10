@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: mymginx-svc
   labels:
-     app: mynginx
+     app: nginx
 spec:
   type: NodePort
   ports:
@@ -11,5 +11,5 @@ spec:
     nodePort: 30001
     protocal: TCP
   selector:
-      app: mynginx     
+      app: nginx     
 
