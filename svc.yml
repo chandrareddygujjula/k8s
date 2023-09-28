@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-svc nodeport-service
+  name: hello-svc
+  name: nodeport-services
   labels:
     app: nginx
 spec:
