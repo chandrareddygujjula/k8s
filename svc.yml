@@ -5,10 +5,16 @@ metadata:
   labels:
     app: nginx
 spec:
-  type: NodePort
-  ports:
-  - protocol: TCP
-    port: 80
-    nodePort: 30002
   selector:
     app: nginx
+  type: NodePort
+  ipFamilyPolicy: SingleStack
+  ipFamilies:
+    - IPv4
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 30002
+      nodePort: 30002
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
