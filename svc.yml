@@ -6,8 +6,8 @@ metadata:
     app: nginx
 spec:
   type: NodePort
-  ports:
-  - port: 80
+  Ports:
+  - Port: 80
     nodePort: 30008
     protocal: TCP
   selector:
