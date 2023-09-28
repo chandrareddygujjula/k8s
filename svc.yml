@@ -4,7 +4,7 @@ metadata:
   name: hello-svc
   labeles:
     app: nginx
-spec:
+Spec:
   type: NodePort
   Ports:
   - Port: 80
