@@ -8,6 +8,3 @@ spec:
       image: nginx
       ports:
       - containerPort: 80 
-  ports:
-    nodePort: 30001
-    protocol: TCP
