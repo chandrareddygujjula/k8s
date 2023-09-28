@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: hello-pod
 spec:
+  type: NodePort
   containers:
     - name: first-container
       image: nginx
